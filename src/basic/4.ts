@@ -14,4 +14,10 @@ showMessage('message');
 
 console.log(calc(8, 10));
 
-console.log(customError());
+try {
+  customError();
+} catch (error) {
+  if (error instanceof Error) {
+    console.log(`Caught an error: ${error.message}`);
+  }
+}
