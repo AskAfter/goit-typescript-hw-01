@@ -1,16 +1,15 @@
 type Pages = {
-    title: string,
-    likes: number,
-    accounts: string[],
-    status: string,
-    details?: {
-        createAt: Date,
-        updateAt: Date
-    }
-}
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: 'open' | 'close';
+  details?: {
+    createAt: Date;
+    updateAt: Date;
+  };
+};
 
-
-const page1: Pages =  {
+const page1: Pages = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
@@ -29,4 +28,4 @@ const page2: Pages = {
 };
 
 console.log(page1);
-console.log(page2)
+console.log(page2);
